@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:luis_application_2c/tabs/burger_tab.dart';
+import 'package:luis_application_2c/tabs/donut_tab.dart';
+import 'package:luis_application_2c/tabs/pancakes_tab.dart';
+import 'package:luis_application_2c/tabs/pizza_tab.dart';
+import 'package:luis_application_2c/tabs/smoothie_tab.dart';
 import 'package:luis_application_2c/utils/my_tab.dart';
 
 class HomePage extends StatefulWidget {
@@ -44,7 +49,7 @@ class _HomePageState extends State<HomePage> {
             padding:  EdgeInsets.symmetric(horizontal: 36, vertical: 18),
             child: Row(
               children: [
-                Text("I want to  ", 
+                Text("I want to ", 
                 style: TextStyle(
                   //Tipografia 
                   fontFamily: "ComicStrip" ,
@@ -70,7 +75,7 @@ class _HomePageState extends State<HomePage> {
       
         //Pestaña (TaBar)TabBar(tabs: myTabs),
         TabBar(tabs: myTabs),
-        Expanded(child: TabBarView(children: [DonutTab(), BurguerTab(), SmoothieTab(), PancakesTab(), PizzaTab(),])),
+        Expanded(child: TabBarView(children: [DonutTab (), BurgerTab(),PancakesTab (),PizzaTab (),SmoothieTab (),])),
         //Contenido(Cart)
       
           ],)
